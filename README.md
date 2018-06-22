@@ -2,7 +2,7 @@ Majordomo: FB Messenger bot for managing Now Deployments https://zeit.co/now
 
 Commands:
 
-/list - list deployments
+/ls - list deployments
 
 TODO:
 - Get a single deployment
