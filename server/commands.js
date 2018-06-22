@@ -19,7 +19,8 @@ const listDeployments = () => {
     .then((data) => {
       const { deployments } = JSON.parse(data);
       const list = deployments.map((item, index) => {
-        const deployment = `${index + 1}. ${item.name} | ****-****${item.url.substr(-12)} | ${item.scale.max} | ${item.state}`; // eslint-disable-line max-len
+        const deployment = `${index + 1}. ${item.name}\n`
+         + `   *${item.url.substr(-12)} | ${item.scale.max} | ${item.state}`; // eslint-disable-line max-len
         return deployment;
       });
       return list.join('\n');
